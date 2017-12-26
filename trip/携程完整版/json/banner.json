@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "img": "img/banner-1.jpg",
+    "link": "http://pages.c-ctrip.com/commerce/promote/201711/other/wu1/index12.html?pushcode=YX_spd03"
+  },
+  {
+    "id": 2,
+    "img": "img/banner-2.jpg",
+    "link": "http://australia.ctrip.com/"
+  },
+  {
+    "id": 3,
+    "img": "img/banner-3.jpg",
+    "link": "http://jr.ctrip.com/cms/PC-701"
+  },
+  {
+    "id": 4,
+    "img": "img/banner-4.jpg",
+    "link": "http://pages.c-ctrip.com/commerce/promote/car/online/201708/zero_ol/index.html"
+  },
+  {
+    "id": 5,
+    "img": "img/banner-5.jpg",
+    "link": "http://pages.ctrip.com/crptravel/pt/201710/17Q4/index.html#ctm_ref=ctrip1710"
+  },
+  {
+    "id": 6,
+    "img": "img/banner-6.jpg",
+    "link": "http://flights.ctrip.com/campaign/movements/skydybwnxwy.html#ctm_ref=ad_10320673131_skydybwnxwy"
+  },
+  {
+    "id": 7,
+    "img": "img/banner-7.jpg",
+    "link": "http://jr.ctrip.com/cms/PC-957"
+  },
+  {
+    "id": 8,
+    "img": "img/banner-8.jpg",
+    "link": "http://hotels.ctrip.com/events/ohhaiwaixinruzhujiudiandajiemi.html"
+  },
+  {
+    "id": 9,
+    "img": "img/banner-9.jpg",
+    "link": "http://hotels.ctrip.com/events/pinpailiansuojiudian85qi.html"
+  }
+]
