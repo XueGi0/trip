@@ -1,0 +1,335 @@
+html, body {
+    font-size: 12px;
+    line-height: 1.5;
+    font-family: Simsun, sans-serif;
+    color: #333;
+}
+
+.bg {
+    width: 16px;
+    height: 16px;
+    background: url("../img/bg_ico_16x16.png") no-repeat;
+}
+
+.btn {
+    display: block;
+    background-color: #ffb000;
+    border: solid 1px #e77c00;
+    box-shadow: 0 1px 0 rgba(95, 50, 0, 0.7);
+    border-radius: 3px;
+    font-family: "Microsoft YaHei", SimSun, Tahoma, Verdana, Arial, sans-serif;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #f79700;
+    border-color: #de7800;
+}
+
+.outer {
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.header {
+    height: 90px;
+    padding: 0 10px;
+}
+
+.header .logo {
+    float: left;
+    margin-left: 61px;
+    margin-top: 18px;
+    width: 126px;
+    height: 43px;
+    background: url("../img/c_logo2013.png") no-repeat;
+}
+
+.header .title {
+    float: left;
+    width: 670px;
+    padding: 8px 10px;
+    margin-top: 24px;
+    margin-left: 46px;
+    height: 16px;
+    line-height: 16px;
+    background: #FFFCD8;
+    border: 1px solid #D6C197;
+    font-family: 'Microsoft yahei';
+    font-size: 12px;
+    color: #666;
+}
+
+.header .title span {
+    float: left;
+    margin-right: 6px;
+    background-position: 0 -64px;
+}
+
+.header .title a {
+    color: #0053aa;
+}
+
+.header .title a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    position: relative;
+    padding: 0 10px 50px;
+    overflow: hidden;
+}
+
+.content img {
+    position: absolute;
+    top: -16px;
+    left: 55px;
+}
+
+.content .login {
+    width: 330px;
+    /*height: 401px;*/
+    margin-left: 535px;
+    padding: 15px 29px;
+    border: 1px solid #afd0f1;
+}
+
+.content .login .login_hd {
+    width: 330px;
+    height: 21px;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    font: normal 16px "microsoft yahei";
+    border-bottom: 1px solid #D8E8F8;
+}
+
+.content .login .login_hd p {
+    display: inline-block;
+}
+
+.content .login .login_hd a {
+    color: #0053aa;
+}
+
+.content .login .login_hd a:hover {
+    text-decoration: underline;
+}
+
+.content .login .login_hd span {
+    float: right;
+    margin-top: 3px;
+    font: 12px arial, simsun;
+}
+
+.content .login .login_bd .tab {
+    width: 284px;
+    height: 18px;
+    padding-left: 75px;
+    margin-bottom: 10px;
+}
+
+.content .login .login_bd .tab label {
+    float: left;
+    margin-right: 20px;
+}
+
+.content .login .login_bd .tab label:hover {
+    cursor: pointer;
+    border-bottom: 1px dashed #fff;
+}
+
+.content .login .login_bd .con {
+    width: 358px;
+    margin-top: 3px;
+    padding-bottom: 5px;
+    display: none;
+}
+
+.content .login .login_bd .con.select {
+    display: block;
+}
+
+.content .login .login_bd .con .frame {
+    height: 46px;
+    position: relative;
+}
+
+.content .login .login_bd .con .frame span {
+    display: inline-block;
+    width: 65px;
+    text-align: right;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: "Microsoft YaHei", SimSun, sans-serif;
+}
+
+.content .login .login_bd .con .frame input {
+    width: 188px;
+    height: 28px;
+    margin-left: 10px;
+    padding-left: 3px;
+    border: 1px solid #ddd;
+    box-shadow: 1px 1px 1px #ddd inset;
+    font: 14px/28px "Microsoft YaHei", SimSun, Tahoma, Verdana, Arial, sans-serif;
+}
+
+.content .login .login_bd .con .frame .forget {
+    margin-left: 5px;
+    font-size: 12px;
+    font-family: Tahoma;
+    color: #0053aa;
+}
+
+.content .login .login_bd .con .frame .forget:hover {
+    text-decoration: underline;
+}
+
+.content .login .login_bd .con .frame img {
+    width: 88px;
+    height: 35px;
+    cursor: pointer;
+    position: absolute;
+    top: -3px;
+    left: 191px;
+}
+
+.content .login .login_bd .con .frame .code {
+    display: inline-block;
+    position: absolute;
+    top: -1px;
+    width: 86px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    border: 1px solid #8FBBE5;
+    border-radius: 2px;
+    color: #06C;
+    background-color: #E6F3FF;
+    box-shadow: 0 1px 0 rgba(0, 102, 204, 0.25);
+    font-size: 12px;
+    font-family: Tahoma;
+}
+
+.content .login .login_bd .con .frame .code:hover {
+    color: #FFF;
+    border-color: #134D84;
+    background-color: #185A96;
+}
+
+.content .login .login_bd .con .frame .small {
+    width: 95px;
+    margin-right: 10px;
+}
+
+.content .login .login_bd .limit {
+    display: block;
+    width: 118px;
+    height: 23px;
+    margin-left: 81px;
+    margin-bottom: 16px;
+    font-size: 14px;
+    font-family: simsun, sans-serif;
+    border-bottom: 1px dashed transparent;
+}
+
+.content .login .login_bd .limit:hover {
+    border-bottom: 1px dashed #fff;
+}
+
+.content .login .login_bd .btn {
+    margin-left: 81px;
+    margin-bottom: 16px;
+    width: 189px;
+    height: 31px;
+    line-height: 31px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-shadow: 1px 1px 0 #cf7000;
+}
+
+.content .login .login_ft {
+    width: 330px;
+    height: 120px;
+    padding-top: 20px;
+}
+
+.content .login .login_ft .btn_box {
+    height: 26px;
+    margin-bottom: 18px;
+}
+
+.content .login .login_ft .btn_box .btn {
+    float: left;
+    width: 98px;
+    height: 18px;
+    margin: 0 5px;
+    padding: 3px 0;
+    color: #E78003;
+    background-color: #FFF;
+}
+
+.content .login .login_ft .btn_box .btn:hover {
+    color: #fff;
+    background-color: #f79700;
+    border-color: #de7800;
+}
+
+.content .login .login_ft dt {
+    height: 18px;
+    margin-bottom: 10px;
+}
+
+.content .login .login_ft dd {
+    float: left;
+    padding-left: 20px;
+    width: 58px;
+    height: 24px;
+    line-height: 15px;
+    cursor: pointer;
+    background-position: 0 -384px;;
+}
+
+.content .login .login_ft dd:nth-child(3) {
+    background-position: 0 -320px;
+}
+
+.content .login .login_ft dd:nth-child(4) {
+    background-position: 0 -288px;
+}
+
+.content .login .login_ft dd:nth-child(5) {
+    background-position: 0 -224px;
+}
+
+.content .login .login_ft dd:nth-child(6) {
+    background-position: 0 -950px;
+}
+
+.content .login .login_ft dd:nth-child(7) {
+    background-position: 0 -256px;
+}
+
+.content .login .login_ft dd:nth-child(8) {
+    background-position: 0 -448px;
+}
+
+.footer {
+    margin: 10px auto;
+    width: 950px;
+    text-align: center;
+    border-top: 1px dashed #9ECCF5;
+    padding-top: 18px;
+}
+
+.footer p {
+    font-family: Verdana, simsun, sans-serif;
+}
+
+.footer p a {
+    color: #00478E;
+}
+
+.footer p a:hover {
+    text-decoration: underline;
+}

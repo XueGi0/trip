@@ -1,0 +1,380 @@
+em, i, b {
+    font-style: normal;
+    font-weight: normal;
+}
+
+.special {
+    width: 1180px;
+    margin: 28px auto;
+}
+
+.special .con1 .big_pic > img {
+    display: block;
+    position: absolute;
+    top: 45px;
+    right: 19px;
+    width: 220px;
+    height: 330px;
+}
+
+.special .con1 .big_pic > p {
+    position: absolute;
+    bottom: 15px;
+    right: 19px;
+    z-index: 2;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.special .con1 .skip {
+    float: left;
+    position: absolute;
+    top: 15px;
+    left: 275px;
+    line-height: 20px;
+    margin-right: 15px;
+    padding: 0 8px;
+    height: 20px;
+    font-size: 12px;
+    color: #3983e5;
+    border-radius: 3px;
+}
+
+.special .con1 .skip:hover {
+    font-weight: bold;
+    color: #fff;
+    background-color: #3983e5;
+}
+
+.special .con1 .more {
+    position: absolute;
+    right: 9px;
+    top: 12px;
+    height: 18px;
+    line-height: 18px;
+    border: 1px solid transparent;
+    padding: 2px 10px;
+    color: #3983e5;
+}
+
+.special .con1 .more:hover {
+    right: 9px;
+    top: 12px;
+    border: 1px solid #3983e5;
+    border-radius: 3px;
+    padding: 2px 10px;
+}
+
+.special .con1 .more > i {
+    display: inline-block;
+    position: relative;
+    top: 1px;
+    right: 0;
+    width: 6px;
+    height: 11px;
+    background: url("../img/sprite.png") no-repeat -6px -32px;
+}
+
+.special .tab {
+    position: relative;
+    z-index: 10;
+    height: 36px;
+    border-bottom: 2px solid #3983e5;
+    text-align: left;
+}
+
+.special .tab > li {
+    position: relative;
+    bottom: -3px;
+    float: left;
+    height: 36px;
+    line-height: 30px;
+    color: #333;
+    margin-right: 30px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.special .tab > li:hover {
+    color: #3983e5;
+}
+
+.special .tab > li > i {
+    position: absolute;
+    left: 50%;
+    margin-left: -6px;
+    bottom: 3px;
+    display: none;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    line-height: 0;
+    font-size: 0;
+    vertical-align: middle;
+    border-bottom: 6px solid #3983e5;
+    border-top: 0 none;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+}
+
+.special .tab .select {
+    color: #3983e5;
+}
+
+.special .tab .select > i {
+    display: block;
+}
+
+.special .con {
+    height: 390px;
+    overflow: hidden;
+    border: 1px solid #e0e0e0;
+    border-top: none;
+    display: none;
+}
+
+.special .con.select {
+    display: block;
+}
+
+.special .con1 {
+    position: relative;
+    height: 375px;
+    padding: 15px 19px 0;
+}
+
+.special .con1 .in_tab > li {
+    float: left;
+    line-height: 20px;
+    margin-right: 15px;
+    padding: 0 8px;
+    height: 20px;
+    font-size: 12px;
+    color: #3983e5;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.special .con1 .in_tab > .in_select {
+    font-weight: bold;
+    color: #fff;
+    background-color: #3983e5;
+    cursor: default;
+}
+
+.special .con1 .in_tab > li:hover {
+    font-weight: bold;
+    color: #fff;
+    background-color: #3983e5;
+}
+
+.special .con1 .in_con {
+    position: relative;
+    margin-top: 10px;
+    padding-right: 220px;
+    height: 340px;
+    overflow: hidden;
+    display: none;
+}
+
+.special .con1 .in_con.in_select {
+    display: block;
+}
+
+.special .con1 .in_con > .show {
+    display: block;
+    position: relative;
+    width: 220px;
+    height: 160px;
+    float: left;
+    margin: 0 10px 10px 0;
+    overflow: hidden;
+    transition: all .2s linear;
+}
+
+.special .con1 .in_con > .show > .pic {
+    display: block;
+    width: 220px;
+    height: 110px;
+    margin-bottom: 3px;
+    overflow: hidden;
+}
+
+.special .con1 .in_con > .show > .pic > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease 0s;
+}
+
+.special .con1 .in_con > .show > .floating {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 25px;
+    line-height: 25px;
+    padding: 0 5px;
+    left: 0;
+    bottom: 50px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.special .con1 .in_con > .show > .title {
+    height: 20px;
+    line-height: 20px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0 5px;
+    color: #666;
+}
+
+.special .con1 .in_con > .show > span {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 41px;
+    height: 41px;
+    line-height: 1.8;
+    text-align: center;
+    color: #fff;
+    background: url("../img/temai.png") no-repeat 0 0;
+}
+
+.special .con1 .in_con > .show > em {
+    display: block;
+    height: 35px;
+    line-height: 35px;
+    font-size: 12px;
+    color: #999;;
+}
+
+.special .con1 .in_con > .show > .price {
+    position: absolute;
+    bottom: -8px;
+    right: 22px;
+    height: 35px;
+    line-height: 35px;
+}
+
+.special .con1 .in_con > .show > .price > em {
+    position: absolute;
+    top: -4px;
+    left: -9px;
+    font-size: 12px;
+    color: #000
+}
+
+.special .con1 .in_con > .show > .price > i {
+    position: relative;
+    float: right;
+    font: 22px/1.5 tahoma;
+    color: #f60;
+}
+
+.special .con1 .in_con > .show > .price > span {
+    position: absolute;
+    bottom: 8px;
+    right: -16px;
+    font: 12px/1.5 "Microsoft yahei";
+    color: #666;
+}
+
+.special .con1 .in_con > .show:hover {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .25);
+}
+
+.special .con1 .in_con > .show:hover > .pic > img {
+    transform: scale(1.05);
+}
+
+/*-------------------分割线----------------*/
+
+.special .con2 .con2_left {
+    float: left;
+    display: inline;
+    width: 187px;
+    height: 360px;
+    padding: 0 20px 15px;
+    overflow: hidden;
+}
+
+.special .con2 .con2_left > h3 {
+    height: 34px;
+    padding-top: 4px;
+    font: 700 14px/34px "Microsoft yahei";
+}
+.special .con2:nth-last-child(1) .con2_left > h3{
+    height: 21px;
+    padding-top: 4px;
+    font: 700 14px/34px "Microsoft yahei";
+}
+.special .con2 .con2_left > ul {
+    position: relative;
+    top: 5px;
+    width: 197px;
+    line-height: 32px;
+}
+
+.special .con2 .con2_left > ul > li {
+    float: left;
+    position: relative;
+    border-left: 1px solid #ececec;
+    padding: 0 10px;
+    line-height: 18px;
+    height: 18px;
+    margin: 7px 0;
+}
+.special .con2:nth-last-child(1) .con2_left > ul > li{
+    float: left;
+    position: relative;
+    border-left: 1px solid #ececec;
+    padding: 0 8px;
+    line-height: 18px;
+    height: 18px;
+    margin: 7px 0 5px;
+}
+
+.special .con2 .con2_left > ul > li.frameless {
+    border-left: none;
+}
+
+.special .con2 .con2_left > ul > li > a {
+    color: #666;
+}
+
+.special .con2 .con2_left > ul > li > a:hover {
+    color: #3983e5;
+}
+
+.special .con2 .con2_left > ul > li > .hot {
+    display: block;
+    position: absolute;
+    top: -6px;
+    right: 3px;
+    width: 11px;
+    height: 11px;
+    background: url("../img/sprite.png") no-repeat -16px -32px;
+}
+
+.special .con2 .con2_right {
+    position: relative;
+    height: 375px;
+    margin-left: 229px;
+    padding: 15px 19px 0;
+    background: lightblue;
+    border-left: 1px dotted #a3a3a3;
+}

@@ -1,0 +1,378 @@
+/*用车*/
+.mod {
+    width: 1180px;
+    margin: 28px auto 0;
+}
+
+/*标题*/
+.mod .title {
+    position: relative;
+    z-index: 10;
+    height: 36px;
+    border-bottom: 2px solid #3983e5;
+    text-align: left;
+    font: 16px/26px "Microsoft YaHei", "SimHei", SimSun, Tahoma, Verdana, Arial, sans-serif;
+}
+
+.mod .title span {
+    position: relative;
+    bottom: -3px;
+    float: left;
+    height: 36px;
+    line-height: 30px;
+    color: #333;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.mod .title .select{
+    color: #06c;
+    cursor: default;
+}
+
+.mod .title span:hover {
+    color: #06c;
+}
+
+.mod .title span i {
+    position: absolute;
+    left: 50%;
+    margin-left: -6px;
+    bottom: 3px;
+    display: none;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    line-height: 0;
+    font-size: 0;
+    vertical-align: middle;
+    border:6px solid transparent;
+    border-bottom: 6px solid #3983e5;
+}
+
+.mod .title .select i{
+    display: block;
+}
+
+
+/*内容*/
+.mod-bd-panel {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-top: none;
+    overflow: hidden;
+    height: 220px;
+    display: none;
+}
+
+.mod-bd-panel.select{
+    display: block;
+}
+
+.mod-bd-panel .entrance {
+    position: relative;
+    float: left;
+    display: inline;
+    width: 187px;
+    height: 205px;
+    padding: 0 20px 15px;
+    overflow: hidden;
+}
+
+.mod-bd-panel .entrance dl {
+    margin: 0 0 7px 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.mod-bd-panel .entrance dt {
+    padding: 4px 0 0 0;
+    font: 700 14px/34px "Microsoft yahei";
+}
+
+.mod-bd-panel .entrance dd {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative;
+    zoom: 1;
+}
+
+.mod-bd-panel .entrance .entrance-item {
+    position: relative;
+    left: -10px;
+    float: left;
+    display: block;
+    border-left: 1px solid #ececec;
+    padding: 0 10px;
+    line-height: 18px;
+    height: 18px;
+    margin: 7px 0;
+}
+
+.mod-bd-panel .entrance a {
+    color: #666;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.mod-bd-panel .entrance .entrance-item .icon_hot{
+    position: absolute;
+    top: -6px;
+    right: 3px;
+    width: 11px;
+    height: 11px;
+    background: url("../img/un_index_20170601.png") no-repeat -16px -32px;
+}
+
+.mod-bd-panel .entrance a:hover{
+    color: #06c;
+}
+
+.mod-bd-panel .product {
+    position: relative;
+    height: 205px;
+    margin-left: 229px;
+    padding: 15px 19px 0;
+    border-left: 1px dotted #a3a3a3;
+    overflow: hidden;
+}
+
+
+.product .inner-tabs-nav li.select{
+    background: #3983e5;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.product .inner-tabs-nav li.select a{
+    color: #fff;
+    cursor: default;
+}
+
+.product .inner-tabs-nav li:hover{
+    background: #3983e5;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.product .inner-tabs-nav li:hover a{
+    color: #fff;
+}
+
+.product .inner-tabs-nav .dropdown-li:hover{
+    background: #fff;
+
+}
+
+.product .inner-tabs-nav .dropdown-li:hover a{
+    color: #3983e5;
+}
+
+.product .inner-tabs-nav li {
+    float: left;
+    display: inline-block;
+    line-height: 20px;
+    margin-right: 15px;
+    padding: 0 8px;
+}
+
+.product .inner-tabs-nav li a{
+    color: #3983e5;
+}
+
+.product .dropdown-li {
+    margin-top: -1px;
+}
+
+.product .dropdown {
+    position: relative;
+    z-index: 10;
+}
+
+.product .dropdown-toggle {
+    height: 22px;
+    color: #3983e4;
+    padding: 1px 5px 0;
+    display: inline-block;
+    overflow: hidden;
+    width: 40px;
+    background: #fff;
+}
+
+.product .dropdown-cont{
+    position: absolute;
+    top: 24px;
+    left: 0;
+    right: auto;
+    background: #FFFFFF;
+    z-index:80;
+    display: none;
+}
+
+.product .dropdown-menu-list {
+    width: 80px;
+    padding: 4px;
+    height: auto;
+    border: 1px solid #999;
+    max-height: 176px;
+    overflow: hidden;
+}
+
+.product .dropdown-menu-list a {
+    display: block;
+    padding: 0 10px;
+    height: 22px;
+    line-height: 22px;
+    color: #333 ;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.product .caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    line-height: 0;
+    font-size: 0;
+    vertical-align: middle;
+    border:5px solid transparent;
+    border-top: 5px solid #3983e4;
+}
+
+.product .linked-more {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    color: #3983e5;
+}
+
+.product .linked-more:hover {
+    right: 9px;
+    top: 12px;
+    border: 1px solid #3983e5;
+    border-radius: 3px;
+    padding: 2px 10px;
+}
+
+.product .i_index_next {
+    width: 6px;
+    height: 11px;
+    vertical-align: -1px;
+    background: url("../img/un_index_20170601.png") no-repeat -6px -32px;
+    display: inline-block;
+    overflow: hidden;
+}
+
+
+.product .inner-tab-panel{
+    margin-left: -10px;
+    display: none;
+}
+
+.product .inner-tab-panel.select{
+    display: block;
+}
+
+.product .product-item {
+    width: 220px;
+    height: 160px;
+    float: left;
+    margin: 1px 0 10px 10px;
+    overflow: hidden;
+    transition: all .2s linear;
+}
+
+.play .product .product-item {
+    position: relative;
+    top: 10px;
+}
+
+.product-item a{
+    display: block;
+    color: #666666;
+}
+
+.product-item .item-thumbnail {
+    position: relative;
+    width: 220px;
+    height: 110px;
+    margin-bottom: 3px;
+    overflow: hidden;
+}
+
+.product-item:hover{
+    box-shadow: 0 1px 4px rgba(0,0,0,.25);
+}
+
+.product-item .item-thumbnail img{
+    transition: transform 0.3s ease 0s;
+    width: 220px;
+}
+
+.product-item a:hover .item-thumbnail img {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.product-item .item-name {
+    position: relative;
+    height: 20px;
+    line-height: 20px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0 5px;
+}
+
+.product-item .item-info {
+    position: relative;
+    height: 35px;
+    text-align: right;
+    padding: 0 5px;
+    overflow: hidden;
+}
+
+.product-item .item-info .price {
+    position: relative;
+    float: right;
+    font: 22px/1.5 tahoma;
+    color: #f60;
+}
+
+.product-item .item-info .price dfn {
+    vertical-align: 7px;
+    font: 12px/1.5 arial;
+    color: #666;
+}
+
+.product-item .item-info .price_info {
+    margin-left: 3px;
+    vertical-align: 2px;
+    font: 12px/1.5 "Microsoft yahei";
+    color: #666;
+}
+
+.product-item .item-info .item-type {
+    display: block;
+    color: #999;
+    line-height: 35px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
+

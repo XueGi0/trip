@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>携程旅行网官网:酒店预订,机票预订查询,旅游度假,商旅管理</title>
+    <link rel="icon" href="img/smallfish.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/detail.min.css">
+</head>
+<body>
+<!--header-->
+<div class="header">
+    <div class="nav clearfix">
+        <div class="logo">
+            <a href="//www.ctrip.com">携程旅行网</a>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="搜索旅行地/酒店/旅游/景点门票/交通">
+            <button type="button"></button>
+        </div>
+        <div class="bar clearfix">
+            <div class="language">
+                <a class="langnav" href="http://www.ctrip.com/">
+                    <span>
+                        <em></em>Global Sites<b class="arrow"></b>
+                    </span>
+
+                </a>
+                <div class="list">
+                    <ul class="langList clearfix" id="langList">
+                        <li><a href="//www.ctrip.com">中国大陆（简体）</a></li>
+                        <li><a href="http://hk.trip.com/?locale=zh_hk">繁體中文 (香港)</a></li>
+                        <li><a href="https://www.trip.com/?locale=en_US">English (United States)</a></li>
+                        <li><a href="https://hk.trip.com/?locale=en_hk">Hong Kong(English)</a></li>
+                        <li><a href="https://kr.trip.com/?locale=ko_KR">韩语版</a></li>
+                        <li><a href="https://jp.trip.com/?locale=ja_JP">日语版</a></li>
+                        <li><a href="https://sg.trip.com/?locale=en_SG">English (Singapore)</a></li>
+                        <li><a href="https://au.trip.com/?locale=en_au">English (Australia)</a></li>
+                        <li><a href="https://de.trip.com/?locale=de_DE">Deutsch</a></li>
+                        <li><a href="https://fr.trip.com/?locale=fr_FR">Franais</a></li>
+                        <li><a href="https://es.trip.com/?locale=es_ES">Espaol</a></li>
+                        <li><a href="https://ru.trip.com/?locale=ru_RU">Русский</a></li>
+                        <li><a href="https://id.trip.com/?locale=id_ID">Bahasa Indonesia</a></li>
+                        <li><a href="https://my.trip.com/?locale=ms_MY">Bahasa Malaysia</a></li>
+                        <li><a href="https://th.trip.com/?locale=th_TH">泰国站</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="service">
+                <a href="http://kefu.ctrip.com">客服中心</a>
+            </div>
+            <div class="contact">
+                <div class="contit">
+                    <a href="javascript:;">国内：<em class="tel">400-830-6666</em>
+                        <b class="arrow"></b>
+                    </a>
+                </div>
+                <div class="inter">
+                    <ul class="interlist">
+                        <li>
+                            <span>（或）</span>
+                            <em>400-820-6666</em>
+                        </li>
+                        <li>香港：<em>+ 852-3069-9966</em></li>
+                        <li>海外：<em>+ 86-21-3406-4888</em></li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="icon clearfix">
+                <li><a href="http://app.ctrip.com"><em class="iconapp"></em></a>
+                    <div class="iconhide">
+                        <i></i>
+                        <div class="qrcode">
+                            <p class="codehead">手机扫码快速下载</p>
+                            <img src="img/iconapp.jpg" alt="">
+                            <a class="phone" href="">携程旅行手机版<strong>></strong></a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#"><em class="iconwechat"></em></a>
+                    <div class="iconhide">
+                        <i></i>
+                        <div class="qrcode">
+                            <p class="codehead">携程订阅号:helloctrip</p>
+                            <img src="img/iconwechat.jpg" alt="">
+                            <p class="codefoot">扫一扫,领旅行福利</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="navlist">
+    <ul class="content clearfix">
+        <li class="navcon"><a href="http://www.ctrip.com/">首页</a></li>
+        <li class="divider "></li>
+        <li class="navcon">
+            <a href="http://hotels.ctrip.com/">
+                酒店
+                <span class="select"></span>
+                <i class="point"></i>
+            </a>
+            <div class="navhide">
+                <div class="hidelist">
+                    <ul class="clearfix">
+                        <li><a href="http://hotels.ctrip.com/">国内酒店</a></li>
+                        <li class="divider "></li>
+                        <li><a href="http://hotels.ctrip.com/international/">海外酒店</a></li>
+                        <li class="divider "></li>
+                        <li><a href="http://hotels.ctrip.com/apartment">海外民宿+短租</a></li>
+                        <li class="divider "></li>
+                        <li><a href="http://tuan.ctrip.com">团购</a></li>
+                        <li class="divider "></li>
+                        <li><a href="http://hotels.ctrip.com/hotsale">特价酒店</a></li>
+                        <li class="divider "></li>
+                        <li><a href="http://hotels.ctrip.com/tujia/">途家公寓</a></li>
+                        <li class="divider "></li>
+                        <li>
+                            <a href="http://taocan.ctrip.com/sh/HotelDefault.aspx?fluxentrance=10405&FromMenu=hotel">酒店+景点</a>
+                        </li>
+                        <li class="divider "></li>
+                        <li><a href="http://inn.ctrip.com">客栈民宿</a></li>
+                        <li class="divider "></li>
+                        <li><a href="http://meeting.ctrip.com/?channel=0#ctm_ref=mtg_meetingroom_2dh">团队房•长住房</a></li>
+                        <li class="divider "></li>
+                        <li><a href="http://meeting.ctrip.com/?channel=1#ctm_ref=mtg_meeting_2dh">会议</a></li>
+                    </ul>
+                    <a class="indent" href="http://my.ctrip.com/Home/Order/HotelOrderList.aspx"><i class="hotel"></i>酒店订单
+                        ></a>
+                </div>
+            </div>
+        </li>
+        <li class="divider "></li>
+        <li class="navcon"><a href="http://vacations.ctrip.com/">旅游<span class="select"></span><i class="point"></i></a>
+            <div class="navhide">
+                <div class="hidelist">
+                    <ul class="clearfix">
+                        <li><a href="http://vacations.ctrip.com/">旅游首页<span class="label-cn label-cnone"><em>红包出没</em><i
+                                class="triangle"></i></span><i></i></a></li>
+                        <li class="divider "></li>
+                        <li><a href="http://weekend.ctrip.com/around/">周末游</a></li>
+                        <li class="divider "></li>
+                        <li><a href="http://vacations.ctrip.com/grouptravel/">跟团游</a></li>
+                        <li class="divider "></li>
+                        <li><a href="http://taocan.ctrip.com/">自由行</a></li>
+                        <li class="divider "></li>
+                        <li><a href="http://cruise.ctrip.com/">邮轮</a></li>
+                        <li class="divider "></li>
+                        <li><a href="http://taocan.ctrip.com/sh/">酒店+景点</a></li>
+                        <li class="divider "></li>
+                        <li><a href="http://huodong.ctrip.com/">当地玩乐</a>
+                        </li>
+                        <li class="divider "></li>
+                        <li><a href="http://vacations.ctrip.com/themetravel/">主题游<span class="label-cn"><em>HOT</em><i
+                                class="triangle"></i></span><i></i></a></li>
+                        <li class="divider "></li>
+                        <li><a href="http://vacations.ctrip.com/dingzhi">定制旅行</a></li>
+                        <li class="divider "></li>
+                        <li><a href="http://vacations.ctrip.com/youxue">游学</a></li>
+                        <li class="divider "></li>
+                        <li><a href="http://vacations.ctrip.com/visa">签证</a></li>
+                        <li class="divider "></li>
+                        <li><a href="http://mice.ctrip.com">企业会奖</a></li>
+                        <li class="divider "></li>
+                        <li><a href="http://www.hhtravel.com/#ctm_ref=hh_ct_thp_nav">高端游</a></li>
+                        <li class="divider "></li>
+                        <li><a href="http://pages.ctrip.com/ctt/marketing/">爱玩户外</a></li>
+                        <li class="divider "></li>
+                        <li><a href="http://vacations.ctrip.com/insurance">保险</a></li>
+                        <li class="divider "></li>
+                        <li><a href="http://vacations.ctrip.com/deals">特卖汇</a></li>
+                    </ul>
+                    <a class="indent" href="http://my.ctrip.com/Home/Order/PkgOrderList.aspx"><i class="travel"></i>旅游订单
+                        ></a>
+                </div>
+            </div>
+        </li>
+        <li class="divider "></li>
+        <li class="navcon"><a href="http://flights.ctrip.com/">机票<span class="select"></span><i class="point"></i></a>
+            <div class="navhide">
+                <div class="hidelist">
+                    <ul class="clearfix">
+                        <li><a href="http://flights.ctrip.com">国内机票</a></li>
+                        <li class="divider "></li>
+                        <li><a href="http://flights.ctrip.com/international/">国际机票</a></li>
+                        <li class="divider "></li>
+                        <li><a href="http://flights.ctrip.com/fuzzy/#ctm_ref=ctr_nav_flt_fz_pgs">特价机票</a></li>
+                        <li class="divider "></li>
+                        <li><a href="http://taocan.ctrip.com">机+酒</a></li>
+                        <li class="divider "></li>
+                        <li><a href="http://flights.ctrip.com/actualtime">航班动态</a></li>
+                        <li class="divider "></li>
+                        <li><a href="http://flights.ctrip.com/domestic/checkinseat/index">值机选座</a></li>
+                        <li class="divider "></li>
+                        <li>
+                            <a href="http://my.ctrip.com/Home/Order/FlightOrderList.aspx">退票改签</a>
+                        </li>
+                        <li class="divider "></li>
+                        <li><a href="http://flights.ctrip.com/booking/airport-guides.html">机场攻略</a></li>
+                        <li class="divider "></li>
+                        <li><a href="http://airbus.ctrip.com/#ctm_ref=arb_hp_flt_nang">机场巴士</a></li>
+                        <li class="divider "></li>
+                        <li><a href="http://flights.ctrip.com/Domestic/Civs">公务员通道</a></li>
+                    </ul>
+                    <a class="indent" href="http://my.ctrip.com/Home/Order/FlightOrderList.aspx"><i class="ticket"></i>酒店订单
+                        ></a>
+                </div>
+            </div>
+        </li>
+        <li class="divider "></li>
+        <li class="navcon"><a href="http://trains.ctrip.com">火车<span class="select"></span><i class="point"></i></a>
+            <div class="navhide">
+                <div class="hidelist">
+                    <ul class="trainlist clearfix">
+                        <li><a href="http://trains.ctrip.com">国内火车票</a></li>
+                        <li class="divider "></li>
+                        <li><a href="http://rails.ctrip.com">国际火车票•通票<span class="label-cn label-cnone"><em>欧日港台</em><i
+                                class="triangle"></i></span><i></i></a></li>
+                    </ul>
+                    <a class="indent" href="http://my.ctrip.com/Home/Order/RailwayOrderList.aspx"><i class="train"></i>火车票订单
+                        ></a>
+                </div>
+            </div>
+        </li>
+        <li class="divider "></li>
+        <li class="navcon"><a href="http://bus.ctrip.com/">汽车票<span class="select"></span><i class="point"></i></a>
+            <div class="navhide">
+                <div class="hidelist">
+                    <ul class="buslist clearfix">
+                        <li><a href="http://bus.ctrip.com/">汽车票</a></li>
+                        <li class="divider "></li>
+                        <li><a href="http://airbus.ctrip.com/#ctm_ref=arb_hp_bus_nang">机场巴士</a></li>
+                        <li class="divider "></li>
+                        <li><a href="http://bus.ctrip.com/ship/">船票</a></li>
+                        <li class="divider "></li>
+                        <li><a href="http://yacht.ctrip.com/">游艇帆船</a></li>
+                    </ul>
+                    <a class="indent" href="http://my.ctrip.com/Home/Order/QicheOrderlist.aspx"><i class="bus"></i>汽车票订单
+                        ></a>
+                </div>
+            </div>
+        </li>
+        <li class="divider "></li>
+        <li class="navcon"><a href="http://car.ctrip.com/#ctm_ref=chp_var_txt">用车<span class="select"></span><i
+                class="point"></i></a>
+            <div class="navhide">
+                <div class="hidelist">
+                    <ul class="carlist clearfix">
+                        <li><a href="http://car.ctrip.com/#ctm_ref=chp_var_txt">用车首页</a></li>
+                        <li class="divider "></li>
+                        <li><a href="http://car.ctrip.com/hwzijia#ctm_ref=chp_var_txt">国际租车</a></li>
+                        <li class="divider "></li>
+                        <li><a href="http://car.ctrip.com/hwdaijia#ctm_ref=chp_var_txt">国际接送机</a></li>
+                        <li class="divider "></li>
+                        <li><a href="http://car.ctrip.com/line/index">国际包车<span class="label-cn"><em>HOT</em><i
+                                class="triangle"></i></span><i></i></a></li>
+                        <li class="divider "></li>
+                        <li><a href="http://car.ctrip.com/zijia#ctm_ref=chp_var_txt">国内租车</a></li>
+                        <li class="divider "></li>
+                        <li><a href="http://car.ctrip.com/daijia#ctm_ref=chp_var_txt">国内接送机/火车</a></li>
+                        <li class="divider "></li>
+                        <li>
+                            <a href="http://car.ctrip.com/idayweb">国内包车</a>
+                        </li>
+                    </ul>
+                    <a class="indent" href="http://my.ctrip.com/Home/Order/CarOrderList.aspx"><i class="car"></i>用车订单 ></a>
+                </div>
+            </div>
+        </li>
+        <li class="divider "></li>
+        <li class="navcon"><a href="http://piao.ctrip.com/">门票<span class="select"></span><i class="point"></i></a>
+            <div class="navhide">
+                <div class="hidelist">
+                    <ul class="ticketslist clearfix">
+                        <li><a href="http://piao.ctrip.com/?clear=t#ctm_ref=tkt_home_tab_inland">国内门票</a></li>
+                        <li class="divider "></li>
+                        <li><a href="http://piao.ctrip.com/oversea#ctm_ref=tkt_home_tab_oversea">海外•港澳台门票</a></li>
+                        <li class="divider "></li>
+                        <li><a href="http://huodong.ctrip.com#ctm_ref=ctr_hp_ttd">当地玩乐</a></li>
+                        <li class="divider "></li>
+                        <li><a href="http://huodong.ctrip.com/wifi#ctm_ref=ctr_hp_wifi">出境WiFi•电话卡</a></li>
+                        <li class="divider "></li>
+                        <li><a href="http://you.ctrip.com/around#ctm_ref=gs-990123-290801-0-02-M001|0|0">周末游</a></li>
+                        <li class="divider "></li>
+                        <li><a href="http://piao.ctrip.com/dest/t1412255.html">迪士尼</a></li>
+                        <li class="divider "></li>
+                        <li>
+                            <a href="http://parking.ctrip.com">机场停车</a>
+                        </li>
+                    </ul>
+                    <a class="indent" href="http://my.ctrip.com/Home/Order/LocalUnionOrderList.aspx"><i
+                            class="tickets"></i>门票玩乐订单 ></a>
+                </div>
+            </div>
+        </li>
+        <li class="divider "></li>
+        <li class="navcon"><a href="http://tuan.ctrip.com">团购<span class="select"></span><i class="point"></i></a>
+            <div class="navhide">
+                <div class="hidelist">
+                    <ul class="grouplist clearfix">
+                        <li><a href="http://tuan.ctrip.com">团购首页</a></li>
+                        <li class="divider "></li>
+                        <li><a href="http://tuan.ctrip.com/hotel/">酒店</a></li>
+                        <li class="divider "></li>
+                        <li><a href="http://tuan.ctrip.com/ticket/">门票</a></li>
+                        <li class="divider "></li>
+                        <li><a href="http://tuan.ctrip.com/travel/">旅游</a></li>
+                        <li class="divider "></li>
+                        <li>
+                            <a href="http://tuan.ctrip.com/life/">美食</a>
+                        </li>
+                    </ul>
+                    <a class="indent" href="http://my.ctrip.com/Home/Order/GroupOrderList.aspx"><i class="group"></i>团购订单
+                        ></a>
+                </div>
+            </div>
+        </li>
+        <li class="divider "></li>
+        <li class="navcon"><a href="http://you.ctrip.com/">攻略</a></li>
+        <li class="divider"></li>
+        <li class="navcon"><a href="http://g.ctrip.com/">全球购<span class="select"></span><i class="point"></i></a>
+            <div class="navhide">
+                <div class="hidelist">
+                    <ul class="changelist clearfix">
+                        <li><a href="http://g.ctrip.com/">名店购</a></li>
+                        <li class="divider "></li>
+                        <li><a href="http://tax.ctrip.com/?bid=2&cid=1&pid=1">退税</a></li>
+                        <li class="divider "></li>
+                        <li>
+                            <a href="http://g.ctrip.com/gsmarketingactive/unionpay?ctm_ref=M_gw_3home_paypal_cl">银联特惠</a>
+                        </li>
+                        <li class="divider "></li>
+                        <li><a href="http://card.ctrip.com/#ctm_ref=ctr_bid_0_cid_1_pid_1">万千赏</a></li>
+                        <li class="divider "></li>
+                        <li>
+                            <a href="http://forex.ctrip.com/?bid=62&1=1">外币兑换</a>
+                        </li>
+                    </ul>
+                    <a class="indent" href="http://forex.ctrip.com/order/list/"><i class="change"></i>外币兑换订单 ></a>
+                </div>
+            </div>
+        </li>
+        <li class="divider "></li>
+        <li class="navcon"><a href="http://lipin.ctrip.com">礼品卡<span class="select"></span><i class="point"></i></a>
+            <div class="navhide">
+                <div class="hidelist">
+                    <ul class="cardlist clearfix">
+                        <li><a href="http://lipin.ctrip.com">礼品卡首页</a></li>
+                        <li class="divider "></li>
+                        <li><a href="http://lipin.ctrip.com/xcb">礼品卡福袋</a></li>
+                        <li class="divider "></li>
+                        <li><a href="http://jr.ctrip.com/deposit/deposit/index">存款证明</a></li>
+                        <li class="divider "></li>
+                        <li><a href="http://lipin.ctrip.com/voucher">兑换券</a></li>
+                        <li class="divider "></li>
+                        <li>
+                            <a href="http://forex.ctrip.com/?bid=12&1=1">外币兑换</a>
+                        </li>
+                    </ul>
+                    <a class="indent" href="http://my.ctrip.com/Home/Order/TicketOrderList.aspx"><i class="card"></i>礼品卡订单
+                        ></a>
+                </div>
+            </div>
+        </li>
+        <li class="divider "></li>
+        <li class="navcon"><a href="http://ct.ctrip.com/#ctm_ref=xcct">商旅<span class="select"></span><span
+                class="label-cn"><em>商旅通</em><i class="triangle"></i></span><i class="point"></i></a>
+            <div class="navhide">
+                <div class="hidelist">
+                    <ul class="tradelist clearfix">
+                        <li><a href="http://ct.ctrip.com/#ctm_ref=xcct">商旅首页</a></li>
+                        <li class="divider "></li>
+                        <li><a href="http://ct.ctrip.com/crptravel/default/landing#ctm_ref=xcpt">企业差旅平台</a></li>
+                        <li class="divider "></li>
+                        <li>
+                            <a href="http://mice.ctrip.com">会议旅游</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+        <li class="divider "></li>
+        <li class="navcon">
+            <a href="http://cruise.ctrip.com">邮轮</a></li>
+        <li class="divider "></li>
+        <li class="navcon">
+            <a href="http://cruise.ctrip.com/skysea">天海邮轮</a></li>
+        <li class="divider "></li>
+        <li class="navcon navselect" id="navcon"><a href="http://jifen.ctrip.com/rewards">更多<span class="select"></span><i class="point"></i></a>
+            <div class="navhide" id="show">
+                <div class="hidelist">
+                    <ul class="morelist clearfix">
+                        <li>
+                            <a href="http://pages.ctrip.com/marketing/2017/07/svip/index.html?pushcode=act_svip_pc33&qrcode=act_svip_pc37">超级会员</a>
+                        </li>
+                        <li class="divider "></li>
+                        <li><a href="http://cards.ctrip.com">合作卡</a></li>
+                        <li class="divider "></li>
+                        <li>
+                            <a href="https://tassist.ctrip.com/index?scl=mChannel">出行管家</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+        <li class="divider "></li>
+        <li class="login">
+            <p class="enter">
+                <a href="https://accounts.ctrip.com/member/login.aspx?BackUrl=http%3A%2F%2Fwww.ctrip.com%2F%23ctm_ref%3Dssc_hp_elevator_car&responsemethod=get">登录</a><span
+                    class="line">|</span><a
+                    href="https://accounts.ctrip.com/member/emailregist.aspx">注册</a>
+            </p>
+            <p class="ctrip">
+                <a href="http://my.ctrip.com/home/myinfo.aspx#ctm_ref=ssc_hp_myctrip_a">我的携程<b
+                        class="ctripicon"></b></a>
+            </p>
+            <ul class="loginbox">
+                <li class="loginbtn"><input type="button" value="登录"></li>
+                <li><a href="http://my.ctrip.com/home/Order/AllOrder.aspx#ctm_ref=ssc_hp_myctrip_allorders_a">全部订单</a>
+                </li>
+                <li><a href="http://my.ctrip.com/home/FastOrder/OrderSearch.aspx#ctm_ref=ssc_hp_myctrip_phoneorders_a">手机号查订单</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+<!--content-->
+<div class="detail-content">
+    <div class="wrapper clearfix">
+        <div class="pull-left tabBox">
+            <div id="imgBox">
+                <img src="img/XQ01.png" class="con select">
+                <img src="img/XQ02.png" class="con">
+                <img src="img/XQ03.png" class="con">
+                <img src="img/XQ04.png" class="con">
+                <img src="img/XQ05.png" class="con">
+                <img src="img/XQ06.png" class="con">
+            </div>
+            <ul class="clearfix tab">
+                <li class="select"><img src="img/XQ01.png"></li>
+                <li><img src="img/XQ02.png"></li>
+                <li><img src="img/XQ03.png"></li>
+                <li><img src="img/XQ04.png"></li>
+                <li><img src="img/XQ05.png"></li>
+                <li><img src="img/XQ06.png"></li>
+            </ul>
+        </div>
+
+        <div class="pull-right1">
+            <div class="des-head">
+                出行管家30天专属服务
+            </div>
+            <div class="infos">
+                <p>
+                    <span class="info">已售: <span class="num-color1">4614</span>份</span>
+                    <span class="info ">用户评分: <span class="num-color2">3.6</span></span>
+                </p>
+                <p>
+                    <span class="info">服务期限：<span>30天</span></span>
+                    <span class="info">服务语言：<span>中文</span></span>
+                </p>
+
+            </div>
+            <h3>产品亮点</h3>
+            <div class="features">
+                <div class="feature">
+                    <span class="feature-title">行前定制服务</span>
+                    行程规划、产品甄选、信息支持
+                </div>
+                <div class="left-bar"></div>
+                <div class="feature">
+                    <span class="feature-title">行中保障服务</span>
+                    答疑解惑、问题协调
+                </div>
+                <div class="left-bar second"></div>
+                <div class="feature">
+                    <span class="feature-title">行后关怀服务</span>
+                    售后支持、旅行游记
+                </div>
+            </div>
+            <div class="electonic-tour clearfix">
+                <h3>附赠电子导游</h3>
+                <ul class="pull-left tour-des">
+                    <li><span></span>图文并茂景点描述，专业主播献声讲解</li>
+                    <li><span></span>随到随听，随行随走</li>
+                    <li><span></span>限手机端使用</li>
+                </ul>
+                <div class="qrcode">
+                    <img src="img/XQma.png" class="img">
+                    <p>手机扫码体验</p>
+                </div>
+                <div class="pay clearfix">
+                    <div class="btn">
+                        <span>立即预订</span>
+                    </div>
+                    <div class="price">
+                        <span>￥</span>
+                        <span class="num">198</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-des clearfix tabBox" id="navBox">
+        <ul class="navs clearfix navs-fixed tab" id="navs">
+            <li class="nav select"><a href="javascript:;">产品介绍</a></li>
+            <li class="nav"><a href="javascript:;">购买须知</a></li>
+            <li class="nav" id="order"><a href="javascript:;">立即预订</a></li>
+        </ul>
+        <div class="scenes con">
+            <div class="scenes-head">
+                <h3>适用场景</h3>
+                <p>您是否遇到过这样的问题？</p>
+            </div>
+            <ul class="clearfix scene-list ">
+                <li class="scene">
+                    <img src="img/XQ2.png" alt="">
+                    <p class="secne-title">行程复杂，线路陌生</p>
+                </li>
+                <li class="scene">
+                    <img src="img/XQ3.png" alt="">
+                    <p class="secne-title">出行人多，意见不一</p>
+                </li>
+                <li class="scene">
+                    <img src="img/XQ4.png" alt="">
+                    <p class="secne-title">无暇计划，时间紧急</p>
+                </li>
+            </ul>
+            <h2 class="title">预订出行管家，无忧您的旅行！</h2>
+            <h3 class="h3 services-h3">服务内容</h3>
+
+            <div class="services clearfix">
+                <div class="clearfix service1">
+                    <div class="disc">
+                        <div class="disc-circle"></div>
+                        <div class="white-border"></div>
+                    </div>
+                    <div class="service1-content">
+                        <p>行前定制服务</p>
+                        <ul>
+                            <li>• 行程规划: 根据游客需求，制定最佳行程方案。</li>
+                            <li>• 产品甄选: 为游客挑选高性价比的机票/酒店/用车等旅行产品。</li>
+                            <li>• 信息支持: 整理目的地饮食、交通、风俗、天气等信息，提供电子文档。</li>
+                        </ul>
+                    </div>
+                    <div class="service1-img">
+                        <img src="img/XQ21.png" alt="">
+                    </div>
+                </div>
+                <div class="clearfix service1">
+                    <div class="disc">
+                        <div class="disc-circle"></div>
+                        <div class="white-border"></div>
+                    </div>
+                    <div class="service1-content">
+                        <p>行中保障服务</p>
+                        <ul>
+                            <li>• 答疑解惑: 针对游客旅行中遇到的疑问，随时给予解答。</li>
+                            <li>• 问题协调: 帮助用户协调处理携程订单变更问题。</li>
+                        </ul>
+                    </div>
+                    <div class="service1-img">
+                        <img src="img/XQ22.png" alt="">
+                    </div>
+                </div>
+                <div class="clearfix service1 no-border">
+                    <div class="disc">
+                        <div class="disc-circle"></div>
+                        <div class="white-border"></div>
+                    </div>
+                    <div class="service1-content">
+                        <p>行后关怀服务</p>
+                        <ul>
+                            <li>• 售后支持: 跟进处理行程结束后的各项事宜。</li>
+                            <li>• 旅行游记: 根据游客喜好，制作H5旅行游记。</li>
+                        </ul>
+                        <p class="electic-tour">附赠电子导游（限手机端使用）</p>
+                        <ul>
+                            <li>图文并茂景点描述，专业主播献声讲解； 随到随听，随行随走。</li>
+                        </ul>
+                    </div>
+                    <div class="service1-img">
+                        <img src="img/XQ23.png" alt=""></div>
+                </div>
+            </div>
+
+            <div class="service1-form">
+                <h3 class="h3">服务形式</h3>
+                <p>一对一专属管家，7*24小时等待召唤。微信联络专线，快速响应解答。</p>
+            </div>
+        </div>
+
+        <div class="issues con">
+            <div class="issue">
+                <p class="issue-head">购买须知</p>
+                <p class="issue-content">本产品由携程会员服务中心资深服务团队提供全方位的管家式服务。</p>
+            </div>
+            <div class="issue">
+                <p class="issue-head">费用包含</p>
+                <ul class="issue-content">
+                    <li>1. 售前咨询、售后保障、行程问题解决等专人服务费用。</li>
+                    <li>2. 产品有效期内附赠的所有增值服务。</li>
+                </ul>
+            </div>
+            <div class="issue">
+                <p class="issue-head">费用不包含</p>
+                <ul class="issue-content">
+                    <li>1. 非本产品订单变更所产生的费用。</li>
+                    <li>2. 个人消费及其他上述未提及的费用。</li>
+                </ul>
+            </div>
+            <div class="issue">
+                <p class="issue-head">预订限制</p>
+                <ul class="issue-content">
+                    <li>1. 每张订单只能购买一份出行管家服务，每份产品仅对应一个微信号，预订时需填写对应的微信号，一经生效将无法修改，请谨慎操作。</li>
+                    <li>2. 需购买多份时，可分多张订单预订</li>
+                    <li>3. 本产品的服务需依附于包括但不限于移动网络、微信、携程旅行APP、电话、智能手机等即时通讯软件及设备。</li>
+                </ul>
+            </div>
+            <div class="issue">
+                <p class="issue-head">发票说明</p>
+                <ul class="issue-content">
+                    <li>1. 本产品仅提供电子普通发票，不提供纸质发票或增值税发票。我司开具的电子发票均为真实有效的合法发票，与传统纸质发票具有同等法律效力，可作为用户维权、单位报销。</li>
+                    <li>2. 发票金额按订单实际支付的金额开具，对于优惠券或礼品卡支付的部分金额不提供发票。</li>
+                    <li>3. 请在产品预订过程中勾选相应选项，并提供email地址，发票会在订单成交后7个工作日内发送到预订时提供的email邮箱。</li>
+                    <li>4. 发票抬头不能为空，可以填写：个人或公司（需填写抬头和税号）。</li>
+                    <li>5. 发票内容仅支持开具“信息服务费”。</li>
+                    <li>6. 单张订单对应单张发票，不支持多张订单合并开具或单张订单拆分金额开具。</li>
+                    <li>7. 用户可通过订单联系手机号在税务局指定的发票服务平台查询电子发票信息。</li>
+                    <li>8. 可凭借电子发票上所标识的发票代码、发票号码、防伪码等信息在国税局服务平台进行查询验证。</li>
+                </ul>
+            </div>
+            <div class="issue">
+                <p class="issue-head">有效期及使用次数</p>
+                <ul class="issue-content">
+                    <li>1. 本产品是周期性服务产品，在有效期内不限使用次数。</li>
+                    <li>2. 生效日期：在预订过程中请自行选择生效起始日期。</li>
+                    <li>3. 管家联系时间：如果您选择当天生效, 专属管家会在订单生效后2小时内与您指定的微信号取得联系。如果您预设日期生效, 专属管家会在选定日期的前一天与您指定的微信号取得联系。</li>
+                </ul>
+            </div>
+            <div class="issue">
+                <p class="issue-head">订单的变更和退订</p>
+                <ul class="issue-content">
+                    <li>1. 订单的变更：订单一经生效，原设定的生效日期将无法修改，请谨慎操作。</li>
+                    <li>2. 订单的退订：在产品生效之前可随时无损退订，产品一旦生效则不接受任何理由的退订要求，敬请谅解。</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <p>
+            <a href="#">网站导航</a>&nbsp;|
+            <a href="#">宾馆索引</a>&nbsp;|
+            <a href="#">机票索引</a>&nbsp;|
+            <a href="#">旅游索引</a>&nbsp;|
+            <a href="#">商旅索引</a>&nbsp;|
+            <a href="#">攻略索引</a>&nbsp;|
+            <a href="#">关于携程</a>&nbsp;|
+            <a href="#">企业公民</a>&nbsp;|
+            <a href="#">诚聘英才</a>&nbsp;|
+            <a href="#">智慧旅游</a>&nbsp;|
+            <a href="#">分销联盟</a>&nbsp;|
+            <a href="#">代理合作</a>&nbsp;|
+            <a href="#">企业商旅</a>&nbsp;|
+            <a href="#">中小企业差旅</a>&nbsp;|
+            <a href="#">广告业务</a>&nbsp;|
+            <a href="#">联系我们</a>
+        </p>
+        <p>
+            <a href="#">加盟合作</a>&nbsp;|
+            <a href="#">酒店加盟</a>&nbsp;|
+            <a href="#">目的地及景区合作</a>&nbsp;|
+            <a href="#">用户协议</a>&nbsp;|
+            <a href="#">营业执照</a>&nbsp;|
+            <a href="#">旅游度假资质</a>&nbsp;|
+            <a href="#">保险代理</a>&nbsp;|
+            <a href="#">友情链接</a>&nbsp;|
+            <a href="#" id="copyright">Copyright©</a>
+            1999-2017,&nbsp;
+            <a href="#">ctrip.com</a>
+            . All rights reserved.&nbsp;|
+            <a href="#">ICP证：沪B2-20050130</a>
+        </p>
+        <p class="gns">
+            <a href="#">
+                <i class="icon-gns"></i>
+                沪公网备31010502002731号
+            </a>
+        </p>
+        <div class="honour_wrap">
+            <a href="#" class="honour1">信用评级</a>
+            <a href="#" class="honour2">上海工商</a>
+            <a href="#" class="honour3">诚信网站</a>
+            <a href="#" class="honour4">网络社会征信网</a>
+            <a href="#" class="honour5">信息举报中心</a>
+            <a href="#" class="honour6">可信网站</a>
+            <a href="#" class="honour7">违法和不良信息举报中心</a>
+        </div>
+    </div>
+</div>
+
+<div class="side_fixed clearfix" id="sidebar">
+    <a class="to_top" id="link"></a>
+    <a class="c_sidebar" href="#">建议反馈</a>
+    <a class="c_sidebar" href="#">在线咨询</a>
+</div>
+
+
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/utils.min.js"></script>
+<script src="js/animate.min.js"></script>
+<script src="js/detail.min.js"></script>
+</body>
+</html>

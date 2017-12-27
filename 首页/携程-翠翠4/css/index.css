@@ -1,0 +1,539 @@
+html, body {
+    height: 4314px;
+    width: 1180px;
+    margin: 0 auto;
+    background: #f6f6f6;
+}
+
+.buy {
+    margin-top: 28px;
+}
+
+.buyHeader {
+    width: 1180px;
+    height: 36px;
+    position: relative;
+    border-bottom: 2px solid #0066cc;
+}
+
+.buyHeader .smallHeader {
+    position: relative;
+    float: left;
+    margin-right: 30px;
+    height: 36px;
+    font: 16px/36px "Microsoft YaHei", "SimHei";
+    cursor: pointer;
+}
+
+.buyHeader .smallHeader:hover {
+    color: #0066cc;
+}
+
+.buyHeader .smallHeader.select {
+    color: #0066cc;
+}
+.triangle {
+    position: absolute;
+    top: 24px;
+    left: 50%;
+    margin-left: -5px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-bottom: 6px solid #0066cc;
+}
+
+.buyBody {
+    width: 1180px;
+    height: 220px;
+    background: #FFFFFF;
+    overflow: hidden;
+}
+
+.buyBody .bdLeft {
+    float: left;
+    width: 227px;
+    height: 100%;
+    border-right: 1px dashed #ececec;
+}
+
+.buyBody .bdLeft .leftHeader {
+    padding: 4px 0 0 0;
+    margin-left: 20px;
+    height: 38px;
+    font: 700 14px/34px "Microsoft yahei";
+}
+
+.buyBody .bdLeft .menu {
+    width: 187px;
+    margin-top: 0;
+    margin-left: 12px;
+    overflow: hidden;
+}
+
+.buyBody .bdLeft .menu > li {
+    position: relative;
+    float: left;
+    padding: 0 9px;
+    margin: 7px 0;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    border-left: 1px solid #ececec;
+}
+.buyBody .bdLeft .menu>li>a>span{
+    display: block;
+    width: 11px;
+    height: 11px;
+    position: absolute;
+    top: -6px;
+    right: 3px;
+    background: url("../img/un_index_20170601.png")no-repeat center center;
+    background-position: -16px -32px;
+}
+
+#buy .buyBody .bdLeft .menu > li:nth-of-type(1), #buy .menu > li:nth-of-type(5), #buy .menu > li:nth-of-type(9), #buy .menu > li:nth-of-type(12) {
+    border-left: none;
+}
+
+.buyBody .bdLeft .menu .place {
+    display: inline-block;
+    height: 18px;
+    color: #666;
+}
+
+.buyBody .bdLeft .menu .place:hover {
+    color: #3983e5;
+}
+
+.buyBody .bdRight {
+    float: left;
+    width: 910px;
+    height: 220px;
+    padding: 15px 12px 19px;
+    overflow: hidden;
+}
+
+.buyBody .bdRight .tabList {
+    height: 20px;
+    line-height: 20px;
+    width: 750px;
+    float: left;
+    margin-bottom: 10px;
+    /*margin: 10px auto;*/
+}
+
+.buyBody .bdRight .tabList > li {
+    float: left;
+    width: 64px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    margin: 0 20px;
+    color: #0066cc;
+    border-radius: 3px;
+}
+
+.buyBody .bdRight .tabList > li:hover {
+    color: #F4F4F4;
+    background: #0066cc;
+    cursor: pointer;
+}
+
+.buyBody .bdRight .tabList > li:nth-of-type(1) {
+    margin-left: 0;
+}
+
+.buyBody .bdRight > a {
+    float: right;
+    display: block;
+    width: 98px;
+    height: 18px;
+    line-height: 16px;
+    margin: 0 19px;
+    border:1px solid transparent;
+    border-radius: 3px;
+    padding: 2px 10px;
+}
+.buyBody .bdRight > a:hover{
+    border-color:#3983e5;
+}
+
+.buyBody .bdRight > a .icon-more {
+    width: 6px;
+    height: 11px;
+}
+
+.buyBody .bdRight .tabList > li.chose {
+    color: #F4F4F4;
+    background: #0066cc;
+}
+.buyBody .bdRight .imgBox {
+    width: 100%;
+    height: 170px;
+    margin-bottom: 40px;
+    overflow: hidden;
+    /*margin-left: 20px;*/
+}
+
+.buyBody .bdRight .imgBox li:hover{
+    /*border: 1px solid #999999;*/
+    box-shadow: 0 1px 4px rgba(0,0,0,.25);;
+}
+
+.buyBody .bdRight .imgBox li ,.travel-body>a{
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    float: left;
+    margin-right: 10px;
+    width: 220px;
+    height: 160px;
+    /*transition: all .2s linear;*/
+}
+
+.buyBody .bdRight .imgBox li:nth-of-type(4) {
+    margin-right: 0;
+}
+
+.buyBody .bdRight .imgBox img {
+    display: block;
+    width: 220px;
+    height: 110px;
+    transition: transform 0.3s ease 0s;
+}
+
+.buyBody .bdRight .imgBox li:hover img{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.buyBody .bdRight .imgBox p {
+    width: 200px;
+    height: 20px;
+    line-height: 20px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.buyBody .bdRight .imgBox span {
+    display: inline-block;
+    width: 178px;
+    height: 35px;
+    line-height: 35px;
+    text-align:left;
+    color: #999999;
+}
+
+.buyBody .bdRight .imgBox em {
+    float: right;
+    display: inline-block;
+    /*vertical-align: middle;*/
+    margin-top: 9px;
+    padding: 1px 3px;
+    font: 12px/14px simsun;
+    text-align: center;
+    border: 1px solid #f60;
+    color: #f60;
+    background: #fff;
+}
+
+#guide .buyBody .bdLeft .menu {
+    width: 227px;
+    margin-left: 12px;
+}
+
+#guide .buyBody .bdLeft .menu > li {
+    padding: 0 0 0 9px;
+    border-left: none;
+}
+
+#guide .buyBody .bdRight .tabList > li {
+    padding: 0 8px;
+    width: auto;
+}
+
+#guide .buyBody .bdRight .imgBox img {
+    height: 160px;
+}
+#guide .buyBody .bdRight .imgBox li{
+
+}
+#guide .buyBody .bdRight .imgBox p{
+    display: block;
+    position: absolute;
+    top: 135px;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    color: #FFFFFF;
+    background: rgba(0, 0, 0, 0.5);
+    transition: all .3s linear;
+    overflow: visible;
+}
+
+#guide .buyBody .bdRight .imgBox li:hover p{
+    top: 108px;
+}
+#guide .buyBody .bdRight .imgBox span{
+    display: block;
+    margin: 2px auto;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+}
+
+
+#guide .buyBody .bdRight .imgBox li p .icon-picture{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    display: block;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+}
+#guide .buyBody .bdRight .imgBox li p .icon-picture img{
+    opacity: 0;
+}
+#guide .buyBody .bdRight .imgBox li:hover p .icon-picture img{
+    opacity: 1;
+    transition: all .8s linear;
+
+}
+#guide .buyBody .bdRight .imgBox li:hover p .icon-picture{
+    opacity: 1;
+    transition: all .5s linear;
+    top: -20px;
+}
+#guide .buyBody .bdRight .imgBox li p .icon-picture img{
+    position: absolute;
+    bottom: 0;
+    left: 86px;
+    border-radius: 50%;
+    display: block;
+    height: 48px;
+    width: 48px;
+}
+
+.travel {
+    display: none;
+    width: 1180px;
+    height: 220px;
+    background: #FFFFFF;
+    overflow: hidden;
+}
+
+.travel-header {
+    width: 1140px;
+    height: 20px;
+    margin: 15px auto 0;
+}
+.travel-header>span{
+    width: 24px;
+    height: 16px;
+    color: #FFFFFF;
+    border-radius: 3px;
+    padding: 2px 10px;
+    background: #3983e5;
+}
+    /*.travel-header span {*/
+    /*padding: 2px 8px;*/
+    /*display: block;*/
+    /*float: left;*/
+    /*color: #FFFFFF;*/
+    /*border-radius: 3px;*/
+    /*background: #3983e5;*/
+/*}*/
+
+.travel .travel-header > a {
+    float: right;
+    display: block;
+    width: 100px;
+    height: 20px;
+    line-height: 20px;
+    margin: -5px 19px;
+    padding: 2px 10px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+}
+.travel .travel-header > a:hover{
+    border-color: #3983e5;
+}
+
+.travel .travel-header > a .icon-more {
+    width: 6px;
+    height: 11px;
+}
+
+.travel .travel-body {
+    margin-top: 10px;
+    margin-left: 19px;
+}
+
+.travel .travel-body a {
+    display: block;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+
+.travel .travel-body img {
+    display: block;
+    width: 220px;
+    height: 157.14px;
+    margin-right: 10px;
+    transition: transform 0.3s ease 0s;
+}
+
+.travel .travel-body img:hover {
+    transform: scale(1.05);
+}
+
+.travel .travel-body p {
+    position: absolute;
+    display: block;
+    top: 127px;
+    left: 0;
+    width: 220px;
+    height: 50px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+    background: rgba(0, 0, 0, 0.5);
+    transition: all .3s linear;
+}
+
+.travel .travel-body a:hover p{
+    top: 108px;
+}
+
+.travel .travel-body p span {
+    display: block;
+    margin-top: -5px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: rgba(255, 255, 255, 0.6)
+}
+
+.buyBody .bdRight .imgBox em.yellow{
+    border: 1px solid #d18f00;
+    color: #d18f00;
+    background: #fff;
+}
+.buyBody .bdRight .imgBox em.blue{
+    border: 1px solid #0b9fdf;
+    color: #0b9fdf;
+    background: #fff;
+}
+.buyBody .bdRight .imgBox em.red{
+    border: 1px solid red;
+    color: red;
+    background: #fff;
+}
+/*电梯栏*/
+.lift {
+    position: fixed;
+    width: 36px;
+    height: 360px;
+    margin: 0 auto;
+    z-index: 999;
+    left: 50%;
+    margin-left: -633px;
+    top: 200px;
+    text-align: center;
+    transition: all 0.5s ease;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.lift .lift-item {
+    position: relative;
+    display: block;
+    width: 36px;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+    margin-top: -1px;
+    overflow: hidden;
+    margin-bottom: 1px;
+    text-shadow: 0 0 black;
+    background: url("../img/un_icon_leftnav.png") no-repeat;
+}
+
+.lift .lift-item:hover {
+    color: #fff;
+    background: #3882e5;
+}
+
+.lift .lift-item .lift-name {
+    display: inline-block;
+    height: 39px;
+    border-top: 1px solid #e0e0e0;
+    font-style: normal;
+    padding-top: 45px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.lift .lift-item .lift-name:hover {
+    text-decoration: none;
+    color: #fff;
+    padding-top: 0;
+    border-top: none;
+    background: none;
+}
+
+.lift .lift-item .lift-name.mix_active {
+    background: none;
+    color: #fff;
+}
+
+.lift .lift-item.lift-vacations {
+    background-position: center 0;
+}
+
+.lift .lift-item.lift-hotels {
+    background-position: center -40px;
+}
+
+.lift .lift-item.lift-flights {
+    background-position: center -80px;
+}
+
+.lift .lift-item.lift-car {
+    background-position: center -120px;
+}
+
+.lift .lift-item.lift-huodong {
+    background-position: center -160px;
+}
+
+.lift .lift-item.lift-mall {
+    background-position: center -200px;
+}
+
+.lift .lift-item.lift-you {
+    background-position: center -240px;
+}
+
+.lift .lift-item.lift-server {
+    background-position: center -280px;
+}
+
+.lift .lift-item.lift-crop {
+    background-position: center -320px;
+}
+
+.mix_active {
+    background: none;
+    color: #fff;
+}
+
+.lift-show {
+    opacity: 1;
+}
